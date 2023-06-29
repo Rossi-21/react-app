@@ -1,8 +1,14 @@
-import React from 'react';
-import ListGroup from './components/ListGroup';
+import Alert from "./components/Alert";
+import ListGroup from "./components/ListGroup";
 
-function App(){
-  return <div><ListGroup /></div>;
+function App() {
+  let items = ["New York", "San Francisco", "Tokyo", "London", "Seattle"];
+  return (
+    <div>
+      <ListGroup items={items} heading="Citites" />
+      <Alert />
+    </div>
+  );
 }
 
 export default App;
